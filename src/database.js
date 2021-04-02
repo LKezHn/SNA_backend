@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const password = process.env.PASSWORD || 'luis2406'
+const password = process.env.PASSWORD
 
 const connection = mongoose.connect(`mongodb+srv://lkezhn:${password}@cluster0.zkome.mongodb.net/simplenotesapp?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
